@@ -1,0 +1,242 @@
+body {
+  overflow: auto;
+  margin: 0;
+}
+body::-webkit-scrollbar {
+  width: 13px;
+  background-color: #fff;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #10a3a4;
+}
+
+#page_1 {
+  background-image: linear-gradient(180deg, #078f91, #19b6b6);
+  color: #fff;
+  width: 100%;
+  height: 721px;
+  margin-top: -50px;
+  padding-top: 50px;
+}
+#main_center {
+  margin: 48px 160px 0 150px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.dms_logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.dms_text {
+  font-size: 28px;
+  font-family: "NanumSquareEB.otf";
+
+  color: #fff;
+  margin-left: 3.125rem;
+}
+.dms_img {
+  width: 3.4375rem;
+  height: 3.4375rem;
+}
+#header_button_list {
+  display: flex;
+  align-items: center;
+}
+.header_button {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  margin: 0 25px;
+}
+.information {
+  height: 50px;
+  width: 150px;
+  border: 0px;
+  border-radius: 25px;
+  font-size: 15px;
+  color: #19b6b6;
+  background-color: #fff;
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
+  margin-left: 20px;
+  transition-property: box-shadow;
+  transition-duration: 0.1s;
+  transition-timing-function: ease;
+}
+.information:hover {
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 0%);
+}
+#menu {
+  margin-top: 30px;
+  flex: 100%;
+}
+.title_menu {
+  font-weight: bold;
+  font-size: 48px;
+  margin: 18px 0 10px 0;
+}
+.date {
+  font-weight: 550;
+  font-size: 25px;
+  color: #ffffffb3;
+}
+.menu_list {
+  width: 732px;
+  height: 382px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  flex: 100%;
+}
+.menu_frame {
+  width: 13.7rem;
+  height: 19.75rem;
+  background-color: #0c9799;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
+  transition-property: width, height;
+  transition-duration: 0.45s;
+  transition-timing-function: ease;
+}
+.menu_frame:hover {
+  transition-property: width, height;
+  transition-duration: 0.45s;
+  transition-timing-function: ease;
+  width: 15.5rem;
+  height: 21.7rem;
+}
+.next_button {
+  display: flex;
+  align-items: center;
+  height: 63px;
+  width: 732px;
+}
+.button {
+  background-color: #fff;
+  border: none;
+  border-radius: 50px;
+  width: 9.375rem;
+  height: 3.125rem;
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
+  color: #19b6b6;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 35px;
+  margin-top: 10px;
+  transition: transform 0.1s;
+}
+.button:hover {
+  transform: scale(1.05);
+  transition: transform 0.1s;
+}
+main {
+  display: flex;
+}
+#dms_img_a {
+  margin-top: 130px;
+}
+.dms_image {
+  width: 445px;
+}
+
+#page_2 {
+  width: 100%;
+  height: 721px;
+  background: hsla(0, 0%, 100%, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page_2_header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #19b6b6;
+}
+.p_t {
+  margin: 0;
+  color: #9e9e9e;
+  font-weight: bold;
+  font-size: 1.1875;
+}
+#application_list {
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+.application_button {
+  width: 280px;
+  height: 500px;
+  background-color: #f5f5f5;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+.application_button:hover {
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.5s;
+  background-color: #19b6b6;
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
+}
+.application_button_in {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+#application_a {
+  text-decoration: none;
+}
+.application_img {
+  width: 100px;
+  height: 100px;
+}
+.application_title {
+  font-size: 29px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.application_explanation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.application_ecplanation_a {
+  margin: 5px 0;
+  font-size: 17px;
+}
+.application_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+}
+.application_button_button {
+  width: 150px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #fff;
+  font-size: 18px;
+  color: #616161;
+}
