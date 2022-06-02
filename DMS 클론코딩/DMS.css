@@ -1,9 +1,14 @@
+* {
+  font-family: "나눔스퀘어OTF";
+}
 body {
+  overflow-x: hidden;
   overflow: auto;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
 }
 body::-webkit-scrollbar {
-  width: 13px;
+  width: 0.8125rem;
   background-color: #fff;
 }
 body::-webkit-scrollbar-thumb {
@@ -14,27 +19,31 @@ body::-webkit-scrollbar-thumb {
 #page_1 {
   background-image: linear-gradient(180deg, #078f91, #19b6b6);
   color: #fff;
-  width: 100%;
+  width: 99.192vw;
   height: 721px;
-  margin-top: -50px;
-  padding-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 #main_center {
-  margin: 48px 160px 0 150px;
+  margin-top: 50px;
+  width: 1200px;
+  height: 721.6px;
 }
 header {
   display: flex;
   justify-content: space-between;
+  width: 79vw;
+  height: 3.581vw;
 }
 .dms_logo {
+  width: 168.73px;
+  height: 55px;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 .dms_text {
   font-size: 28px;
-  font-family: "NanumSquareEB.otf";
-
   color: #fff;
   margin-left: 3.125rem;
 }
@@ -43,6 +52,8 @@ header {
   height: 3.4375rem;
 }
 #header_button_list {
+  width: 650.55px;
+  height: 55px;
   display: flex;
   align-items: center;
 }
@@ -65,12 +76,10 @@ header {
   background-color: #fff;
   box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
   margin-left: 20px;
-  transition-property: box-shadow;
   transition-duration: 0.1s;
   transition-timing-function: ease;
 }
 .information:hover {
-  transition-property: box-shadow;
   transition-duration: 0.5s;
   transition-timing-function: ease;
   box-shadow: 0 5px 5px 0 rgb(0 0 0 / 0%);
@@ -80,7 +89,8 @@ header {
   flex: 100%;
 }
 .title_menu {
-  font-weight: bold;
+  font-weight: 400;
+
   font-size: 48px;
   margin: 18px 0 10px 0;
 }
@@ -130,14 +140,12 @@ header {
   box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
   color: #19b6b6;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1vmax;
   margin-right: 35px;
   margin-top: 10px;
-  transition: transform 0.1s;
 }
 .button:hover {
   transform: scale(1.05);
-  transition: transform 0.1s;
 }
 main {
   display: flex;
@@ -239,4 +247,16 @@ main {
   background-color: #fff;
   font-size: 18px;
   color: #616161;
+}
+.menu_frame_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid;
+  height: 100%;
+}
+.menu_frame_text p {
+  margin: 0;
 }
