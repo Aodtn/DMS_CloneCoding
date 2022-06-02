@@ -1,7 +1,7 @@
 let D = new Date();
 const Year = D.getFullYear();
-const Month = D.getMonth() + 1;
-const date = D.getDate();
+const Month = String(D.getMonth() + 1).padStart(2, "0");
+const date = String(D.getDate()).padStart(2, "0");
 const day_a = ["일", "월", "화", "수", "목", "금", "토"];
 const day = day_a[D.getDay()];
 const date_text = document.getElementsByClassName("date")[0];
@@ -21,14 +21,14 @@ function fillZero(width, str) {
 fetch(`https://api.dsm-dms.com/meal/${Year}-${Month}-${date}`)
   .then((response) => response.json())
   .then((json) => {
-    const key = Object.keys(json[`2022-06-01`]);
+    const key = Object.keys(json[`${Year}-${Month}-${date}`]);
 
     console.log(key);
-    console.log(json[`2022-06-01`][key[0]]);
+    console.log(json[`${Year}-${Month}-${date}`][key[0]]);
     for (i = 0; i < key.length; i++) {
-      for (j = 0; j < json[`2022-06-01`][key[i]].length; j++) {
+      for (j = 0; j < json[`${Year}-${Month}-${date}`][key[i]].length; j++) {
         const bob_p = document.createElement("p");
-        bob_p.innerHTML = json[`2022-06-01`][key[i]][j];
+        bob_p.innerHTML = json[`${Year}-${Month}-${date}`][key[i]][j];
         switch (i) {
           case 0:
             bob.breakfast.appendChild(bob_p);
